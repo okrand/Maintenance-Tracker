@@ -28,11 +28,13 @@ class App extends Component<{}, State> {
       return (
         <div className="App">
           <div className="App-header">Maintenance Tracker</div>
-          <div className="current-vehicle">
-            <ShowVehicle vehicle={this.state.currentVehicle}/>
-          </div>
-          <div className="right-column">
-            <VehiclesList changeCurrentVehicle={this.changeCurrentVehicle} vehicles={this.state.vehicles}/>
+          <div className="App-content">
+            <div className="current-vehicle">
+              <ShowVehicle vehicle={this.state.currentVehicle}/>
+            </div>
+            <div className="right-column">
+              <VehiclesList changeCurrentVehicle={this.changeCurrentVehicle} vehicles={this.state.vehicles}/>
+            </div>
           </div>
         </div>
       );

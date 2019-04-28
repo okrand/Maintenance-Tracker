@@ -1,20 +1,10 @@
-.App {
-  display: flex
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -23,21 +13,18 @@
   color: #61dafb;
 }
 
+.App-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .current-vehicle {
   text-align: left;
 }
 
 .right-column {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
   text-align: right;
-  padding-right: 0%;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
