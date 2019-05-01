@@ -12,8 +12,9 @@ export default class VehiclesList extends Component<Props, {}> {
     }
 
     render() {
-        return this.props.vehicles.map((vehicle: Vehicle) => {
+        const buttons = this.props.vehicles.map((vehicle: Vehicle) => {
             return <button key={vehicle.id} className="vehicle-button" onClick={() => this.props.changeCurrentVehicle(vehicle)}>{vehicle.year} {vehicle.make} {vehicle.model}</button>
         });
+        return buttons
     }
 }
