@@ -59,11 +59,11 @@ export function getLog(vehicleId: number): Log[] | undefined {
             {
                 id: 1,
                 vehicleId: 0,
-                work: "Oil Change w/ Filter",
+                work: "Chain Adjustment",
                 mileage: 28875,
                 date: new Date(2019, 4, 29).valueOf(),
-                category: "Oil Change",
-                details: "Mobil1 + HiFlo filter"
+                category: "Drivetrain",
+                details: ""
             }
         ];
     }
